@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="771.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Manager">
+  <tabs>
+    <Tab text="Search Toy">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="119.0" layoutY="7.0" text="Welcome to Our Toy Warehouse!">
+                     <font>
+                        <Font name="Arial Black" size="30.0" />
+                     </font>
+                  </Label>
+                  <Line endX="670.0" layoutX="100.0" layoutY="58.0" startX="-100.0" />
+                  <ListView layoutX="285.0" layoutY="72.0" prefHeight="344.0" prefWidth="458.0" />
+                  <Button layoutX="367.0" layoutY="428.0" mnemonicParsing="false" text="Buy" />
+                  <Label layoutX="14.0" layoutY="72.0" text="Search Inventory:">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="22.0" layoutY="106.0" mnemonicParsing="false" text="Serial Number">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="searchType" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton layoutX="136.0" layoutY="106.0" mnemonicParsing="false" text="Name" toggleGroup="$searchType" />
+                  <RadioButton layoutX="212.0" layoutY="106.0" mnemonicParsing="false" text="Type" toggleGroup="$searchType" />
+                  <Line endX="138.0" layoutX="136.0" layoutY="143.0" startX="-128.0" />
+                  <Label layoutX="14.0" layoutY="158.0" text="Serial Number(SN)" />
+                  <Label layoutX="14.0" layoutY="210.0" text="Name" />
+                  <Label layoutX="17.0" layoutY="267.0" text="Type" />
+                  <TextField layoutX="126.0" layoutY="154.0" />
+                  <TextField layoutX="126.0" layoutY="206.0" />
+                  <TextField layoutX="126.0" layoutY="263.0" />
+                  <Line endX="138.0" layoutX="136.0" layoutY="312.0" startX="-128.0" />
+                  <Button layoutX="175.0" layoutY="361.0" mnemonicParsing="false" text="Clear" />
+                  <Button layoutX="45.0" layoutY="361.0" mnemonicParsing="false" text="Search" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Add Toy">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="474.0" prefWidth="1056.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="21.0" text="Enter New Toy Information:">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-94.0" endY="443.0" layoutX="380.0" layoutY="15.0" opacity="0.5" startX="-100.0" />
+                  <Line endX="125.0" layoutX="115.0" layoutY="57.0" opacity="0.5" startX="-100.0" />
+                  <Label layoutX="15.0" layoutY="72.0" text="Category" />
+                  <Label layoutX="14.0" layoutY="121.0" text="Serial Number" />
+                  <Label layoutX="15.0" layoutY="163.0" text="Name" />
+                  <Label layoutX="15.0" layoutY="207.0" text="Brand" />
+                  <Label layoutX="15.0" layoutY="256.0" text="Price" />
+                  <Label layoutX="15.0" layoutY="307.0" text="Available-count" />
+                  <Label layoutX="15.0" layoutY="361.0" text="Age-appropriate" />
+                  <TextField layoutX="113.0" layoutY="117.0" />
+                  <TextField layoutX="113.0" layoutY="159.0" />
+                  <TextField layoutX="113.0" layoutY="203.0" />
+                  <TextField layoutX="113.0" layoutY="252.0" />
+                  <TextField layoutX="113.0" layoutY="303.0" />
+                  <TextField layoutX="113.0" layoutY="357.0" />
+                  <ChoiceBox fx:id="toyCategory" layoutX="112.0" layoutY="68.0" prefWidth="150.0" />
+                  <Button layoutX="28.0" layoutY="401.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="232.0" text="Save" />
+                  <Line endX="100.0" layoutX="419.0" layoutY="216.0" opacity="0.5" startX="-118.0" />
+                  <Line endX="-100.0" endY="188.0" layoutX="640.0" layoutY="21.0" opacity="0.5" startX="-100.0" />
+                  <Line endX="-100.0" endY="213.0" layoutX="641.0" layoutY="224.0" opacity="0.5" startX="-100.0" />
+                  <Line endX="100.0" layoutX="656.0" layoutY="216.0" opacity="0.5" startX="-100.0" />
+                  <Label layoutX="391.0" layoutY="32.0" text="Figure">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="635.0" layoutY="32.0" text="Animal">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="392.0" layoutY="238.0" text="Puzzle">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="618.0" layoutY="238.0" text="Board Game">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="305.0" layoutY="107.0" text="Label" />
+                  <Label layoutX="556.0" layoutY="81.0" text="Material" />
+                  <Label layoutX="306.0" layoutY="320.0" text="Type" />
+                  <Label layoutX="557.0" layoutY="299.0" text="Min # of Players" />
+                  <Label layoutX="556.0" layoutY="341.0" text="Max # of Players" />
+                  <Label layoutX="548.0" layoutY="382.0" text="Designer(s)" />
+                  <TextField layoutX="362.0" layoutY="103.0" />
+                  <TextField layoutX="642.0" layoutY="77.0" prefHeight="25.0" prefWidth="112.0" />
+                  <TextField layoutX="642.0" layoutY="130.0" prefHeight="25.0" prefWidth="112.0" />
+                  <Label layoutX="556.0" layoutY="134.0" text="Size" />
+                  <TextField layoutX="356.0" layoutY="316.0" />
+                  <TextField layoutX="678.0" layoutY="295.0" prefHeight="25.0" prefWidth="52.0" />
+                  <TextField layoutX="678.0" layoutY="337.0" prefHeight="25.0" prefWidth="52.0" />
+                  <TextField layoutX="618.0" layoutY="378.0" prefHeight="25.0" prefWidth="136.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Remove Toy">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView layoutX="262.0" layoutY="15.0" prefHeight="440.0" prefWidth="494.0" />
+                  <Label layoutX="14.0" layoutY="25.0" text="Enter Toy Serial Number:">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+                  <Line endX="127.0" layoutX="117.0" layoutY="65.0" startX="-108.0" />
+                  <TextField layoutX="32.0" layoutY="171.0" prefHeight="25.0" prefWidth="190.0" />
+                  <Button layoutX="40.0" layoutY="266.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="173.0" text="Remove" />
+                  <Label layoutX="58.0" layoutY="144.0" text="Enter Serial Number Here:" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
