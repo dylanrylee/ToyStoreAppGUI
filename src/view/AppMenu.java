@@ -1,10 +1,12 @@
 package view;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import controller.Manager;
 import exceptions.MinGreaterThanMax;
 import exceptions.PriceNotPositive;
+import model.Toy;
 
 /**
  * This is where we print and output in the console
@@ -134,29 +136,10 @@ public class AppMenu {
 	}
 
 	/**
-	 * This method prints out "Press enter to Continue" This method is created so
-	 * that this code is not repeated
+	 * This public String method displays that there are no more stock for the toy
 	 */
-	public void enterToContinue() {
-		boolean flag = true;
-		System.out.print("\nPress Enter to Continue...");
-		while (flag) {
-			String decision = input.nextLine();
-			if (decision.equals("")) {
-				flag = false;
-			} else {
-				enterToContinue();
-				return;
-			}
-		}
-	}
-
-	/**
-	 * This public void method displays that there are no more stock for the toy
-	 */
-	public void showNoToysLeft() {
-		System.out.println("Sorry, unfortunately we are out of stock for this toy");
-		enterToContinue();
+	public String showNoToysLeft() {
+		return "Sorry, unfortunately we are out of stock for this toy";
 
 	}
 
@@ -178,7 +161,6 @@ public class AppMenu {
 	public void showTransactionComplete(String name) {
 		System.out.println("You have purchased " + name);
 		System.out.println("\nThe Transaction Successfully Terminated");
-		enterToContinue();
 	}
 
 	/**
@@ -226,17 +208,6 @@ public class AppMenu {
 		return option;
 	}
 
-	/**
-	 * This public char method asks to pick which toy type to search in the database
-	 * 
-	 * @return toyType string variable
-	 */
-	public char promptToyType() {
-		System.out.print("Enter Toy Type (F) for Figures, (A) for Animals, (P) for Puzzles, (B) for BoardGames: ");
-		String toyType = input.nextLine();
-		char option = toyType.toLowerCase().charAt(0);
-		return option;
-	}
 
 	/**
 	 * This public String method prompts the toy brand of the toy
@@ -409,32 +380,32 @@ public class AppMenu {
 
 		return toyDesigner;
 	}
-
-	/**
-	 * This public char method ensures if they really do want to delete this toy
-	 * from the database
-	 * 
-	 * @param name is the name of the toy taken in as a parameter
-	 * @return the decision of the user
-	 */
-	public char promptToyRemoval(String name) {
-		char decision;
-		System.out.print("\nDo you want to remove " + name + " (y/n) ? : ");
-		decision = input.nextLine().toLowerCase().charAt(0);
-		while (decision != 'y' && decision != 'n') {
-			System.out.println("Error: That was an invalid input, Press Enter and Try Again!");
-			promptToyRemoval(name);
-
-		}
-		return decision;
+	
+	public String displayCompletedPurchase(String toyName) {
+		return "You have purchased: " + toyName;
 	}
+	
+	public String displayRemovedToy(String toyName) {
+		return "You have removed: " + toyName;
+	}
+	
+	public String displayError(int errorNum) {
+		String error = "";
+		switch (errorNum) {
+		case 1: 
+			error = "The length of the Serial Number\nhas to be 10";
+			break;
+		case 2:
+			error = "This toy does not exist in the database";
+			break;
+		case 3: 
+			error = "This is not one of the toy types";
+			break;
+		case 4: 
+			error = "The serial number should\nnot consist of any letters";
+		}
 
-	/**
-	 * This public void method prints out that the changes made are being saved into
-	 * the database
-	 */
-	public void saveAndExitMessage() {
-		System.out.println("\n************ THANKS FOR VISITING US! ************");
+		return error;
 	}
 
 }
