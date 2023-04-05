@@ -541,13 +541,13 @@ public class Manager implements Initializable{
 			for (int i = 0; i <= toys.size() - 1; i++) {
 				if (toys.get(i).formatString().equals(searchedToys.get(selectedToy).formatString())) {
 					toys.get(i).setCount(newCount);
+					log.logPurchase(searchedToys.get(selectedToy).getName());
 				}
 			}
 			searchedToys.get(selectedToy).setCount(newCount);
 			purchasedToyLabel.setText(appMenu.displayCompletedPurchase(searchedToys.get(selectedToy).getName()));
 		}
 		saveProgress();
-		log.logPurchase(searchedToys.get(selectedToy).getName());
 
 	}
 
@@ -831,15 +831,15 @@ public class Manager implements Initializable{
 	        addSuccessLabel.setStyle("-fx-text-fill: red;");
 		} catch (NumberFormatException ex) {
 	        addSuccessLabel.setText("");
-	        addSuccessLabel.setText("Error: Price/count/age must be numbers.");
+	        addSuccessLabel.setText("Error: Price/count/age must be numbers or they cannot be empty.");
 	        addSuccessLabel.setStyle("-fx-text-fill: red;");
 	        
 		} 
 		catch (StringIndexOutOfBoundsException ex) {
-			addSuccessLabel.setText("");
-	        addSuccessLabel.setText("Error: Serial number cannot be blank");
-	        addSuccessLabel.setStyle("-fx-text-fill: red;");
-		}
+            addSuccessLabel.setText("");
+            addSuccessLabel.setText("Error: One or more toy attributes are missing.");
+            addSuccessLabel.setStyle("-fx-text-fill: red;");
+        }
 		saveProgress();
 	}
 	
