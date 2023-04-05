@@ -1,0 +1,18 @@
+Apr. 04, 2023 3:12:53 P.M. view.Logging logPurchase
+INFO: One of Jenga has been purchased
+Apr. 04, 2023 3:39:25 P.M. view.Logging logPurchase
+INFO: One of Elizabeth I has been purchased
+Apr. 04, 2023 3:46:29 P.M. view.Logging logRemove
+INFO: You have removed: newbrand has been removed from the database
+Apr. 04, 2023 3:46:53 P.M. view.Logging logPurchase
+INFO: One of Star Wars has been purchased
+Apr. 04, 2023 4:34:44 P.M. view.Logging logAdd
+INFO: figure has been added into the database
+Apr. 04, 2023 4:52:44 P.M. view.Logging logRemove
+INFO: You have removed: Squirrel has been removed from the database
+Apr. 04, 2023 5:11:25 P.M. view.Logging logAdd
+INFO: dylan has been added into the database
+Apr. 04, 2023 5:12:13 P.M. view.Logging logPurchase
+INFO: One of dylan has been purchased
+Apr. 04, 2023 5:13:08 P.M. view.Logging logRemove
+INFO: You have removed: dylan has been removed from the database
