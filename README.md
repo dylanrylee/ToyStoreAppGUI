@@ -1,4 +1,4 @@
-# Assignment3
+# Assignment 3
 
 **Raphael DeJesus**
 - Worked on Manager.java class
