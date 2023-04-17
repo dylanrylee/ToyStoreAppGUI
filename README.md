@@ -1,4 +1,12 @@
 # Assignment 3
+GUI Toy Store Company App
+You can purchase a toy, add or remove a toy from the database. 
+- When a toy is purchased, the number of stock for that toy decreases
+- When you add a toy, a serial number is required and depending on that serial number, a specific toy type 
+  is created
+- When you remove a toy, the serial number inputted has to be exact, and when it is exact, it removes
+  it completely from the database, making it unable to search for it when you input the name/serial number/toy type of the 
+  toy
 
 **Raphael DeJesus**
 - Worked on Manager.java class
