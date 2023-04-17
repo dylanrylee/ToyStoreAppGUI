@@ -1,6 +1,5 @@
 # Assignment 3
 GUI Toy Store Company App
-&You can purchase a toy, add or remove a toy from the database.&
 
 - When a toy is purchased, the number of stock for that toy decreases
 - When you add a toy, a serial number is required and depending on that serial number, a specific toy type 
