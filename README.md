@@ -7,6 +7,16 @@ GUI Toy Store Company App
 - When you remove a toy, the serial number inputted has to be exact, and when it is exact, it removes
   it completely from the database, making it unable to search for it when you input the name/serial number/toy type of the 
   toy
+  
+**Dylan Dizon**
+- Worked on Manager.java class
+- Worked on Logging.java class
+- Designed how the back end should be structured
+- Worked on a few button handlers and labels for the GUI
+- Worked on saving the changes into the database and the log updates in the log file
+- Worked on AppMenu.java class
+- Worked on commenting and Doc Files
+- Worked on input validation
 
 **Raphael DeJesus**
 - Worked on Manager.java class
@@ -18,12 +28,3 @@ GUI Toy Store Company App
 - Worked on commenting and Doc Files
 - Worked on input validation
 
-**Dylan Dizon**
-- Worked on Manager.java class
-- Worked on Logging.java class
-- Designed how the back end should be structured
-- Worked on a few button handlers and labels for the GUI
-- Worked on saving the changes into the database and the log updates in the log file
-- Worked on AppMenu.java class
-- Worked on commenting and Doc Files
-- Worked on input validation
