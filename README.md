@@ -1,4 +1,4 @@
-# Toy Store App GUI - Assignment 3
+# Toy Store App GUI
 GUI Toy Store Company App
 
 - When a toy is purchased, the number of stock for that toy decreases
