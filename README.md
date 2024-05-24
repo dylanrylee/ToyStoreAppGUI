@@ -20,6 +20,7 @@ MRU COMP 1502 Assignment 3
 - Worked on saving the changes into the database and the log updates in the log file
 - Worked on AppMenu.java class
 - Worked on commenting and Doc Files
+- Extended the unit tests for the models
 - Worked on input validation
 
 **Raphael DeJesus**
