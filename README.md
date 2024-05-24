@@ -1,13 +1,20 @@
 # Toy Store App GUI
-GUI Toy Store Company App
 
+MRU COMP 1502 Assignment 3
+
+### What it does
 - When a toy is purchased, the number of stock for that toy decreases
 - When you add a toy, a serial number is required and depending on that serial number, a specific toy type 
   is created
 - When you remove a toy, the serial number inputted has to be exact, and when it is exact, it removes
   it completely from the database, making it unable to search for it when you input the name/serial number/toy type of the 
   toy
-  
+
+### What we did
+- Developed a Toy Store application with a text file database management capabilities, including features for adding, removing, and tracking toys, where each toy has unique serial numbers, prices, and stock levels.
+- Structured and implemented the backend framework to ensure scalability and maintainability of the application, while applying the MVC architecture to organize each class.
+- Implemented a Logging class for real-time activity within the application, alongside GUI enhancements for improved user interaction, robust input validation for data integrity, and seamless data persistence through database integration
+
 **Dylan Dizon**
 - Worked on Manager.java class
 - Worked on Logging.java class
