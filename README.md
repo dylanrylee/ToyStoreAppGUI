@@ -1,4 +1,4 @@
-# Toy Store App GUI
+# Toy Store DBMS GUI
 
 MRU COMP 1502 Assignment 3
 
