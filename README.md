@@ -1,6 +1,6 @@
-# Toy Store DBMS GUI
+# Toy Inventory System
 
-MRU COMP 1502 Assignment 3
+MRU COMP 1502 Final Project
 
 ### What it does
 - When a toy is purchased, the number of stock for that toy decreases
